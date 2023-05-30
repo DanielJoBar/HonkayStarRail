@@ -1,0 +1,95 @@
+/****************************************************/
+/*  Contacto - Hoja de estilo                         */
+/*  Autor : Daniel Jódar Barbero                   */
+/*                                                  */
+/****************************************************/
+
+
+/************** Estilo general **********************/
+@font-face {
+    font-family: texto;
+    src: url("../fonts/AmidoneGrotesk.ttf");
+}
+/**********Barra de navegación*************/
+.navbar{
+    position: sticky !important;
+    width:100%;
+    z-index: 9999;
+}
+#wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#Contacto{
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+.table{
+    position: flex;
+}
+.imagen{
+    position: flex;
+    height: auto;
+    max-height: 50px !important;
+    min-height: 20px  !important;
+}
+.textos{
+    position: relative;
+    align-content: center;
+    font-family: texto;
+    text-align: center;
+}
+
+
+
+/************Video de fondo****************/
+.video{
+    position:fixed;
+    height: 120%;
+    z-index:-1;
+}
+/************Botones************/
+.button{
+    background-color: rgb(217, 195, 29); 
+    border: none;
+    color: black;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+/*************Footer********************/
+#Footer{
+    
+    text-align:center!important;
+    z-index: 0;
+    position:absolute;
+    width: 100%;
+    max-height: 100%;
+}
+.fondo_negro{
+    background-color: rgb(0, 0, 0);
+}
+.letras_grises{
+    color: rgb(83, 80, 80);
+}
+/******************Media Queries***************/
+@media only screen and (width<=600px){
+#Footer{
+    position: absolute;
+    z-index: 1;
+}
+#Footer img{
+    width: 50%;
+    bottom: -400px;
+}  
+}

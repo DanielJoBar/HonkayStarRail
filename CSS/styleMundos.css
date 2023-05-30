@@ -1,0 +1,99 @@
+/****************************************************/
+/*  Mundos - Hoja de estilo                         */
+/*  Autor : Daniel Jódar Barbero                   */
+/*                                                  */
+/****************************************************/
+
+
+@font-face {
+    font-family: texto;
+    src: url("../fonts/AmidoneGrotesk.ttf");
+}
+/**************Botones**********************/
+.button{
+    background-color: rgb(217, 195, 29); 
+    border: none;
+    color: black;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+/*****************Texto**********************/
+.texto{
+    text-align: center;
+    font-family: texto;
+    color:bisque;
+    height: 15rem;
+    text-decoration:underline;
+}
+
+/******************Cards*********************/
+.card{
+    margin-top: 20%;
+    background-image: url("../images/fondoCard.png");
+    font-family: texto;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    max-height: 600px;
+    min-height: 500px;
+    position: relative;
+}
+.card img{
+    max-height: 350px;
+    min-height: 200px;
+}
+.cardG img{
+    margin-left: 10%;
+    max-height:250px;
+    width: 80%;
+    
+}
+
+  /***************Footer********************/
+  #Footer{
+    position: absolute;
+    width: 100%;
+    bottom: -1;
+    left: 0;
+  }
+   .fondo_negro{
+    background-color: black;
+}
+
+.letras_grises{
+    color: rgb(97, 94, 94);
+}
+  .imagenfondoportada{
+    min-width: 100%;
+    z-index: 1;
+}
+/************Video de fondo****************/
+.video{
+    position:fixed;
+    height: 120%;
+    z-index:-1;
+}
+/**********Barra de navegación*************/
+.navbar{
+    position: sticky !important;
+    width:100%;
+    z-index: 9999;
+}
+/******************Media Queries***************/
+@media only screen and (width<=700px){
+    #Footer{
+        position: absolute;
+        z-index: 1;
+        bottom: -1120px!important;
+    }
+    #Footer img{
+        width: 50%;
+    }  
+    }

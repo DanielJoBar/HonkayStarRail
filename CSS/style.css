@@ -1,0 +1,138 @@
+/****************************************************/
+/*  Inicio - Hoja de estilo                         */
+/*  Autor : Daniel Jódar Barbero                   */
+/*                                                  */
+/****************************************************/
+
+/************** Estilo general **********************/
+@font-face {
+    font-family: texto;
+    src: url("../fonts/AmidoneGrotesk.ttf");
+}
+/**************Botones**********************/
+.button{
+    background-color: rgb(217, 195, 29); 
+    border: none;
+    color: black;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+/*************Estilo Inicio*****************/
+#Inicio{
+    height: 100vh;
+    position: relative;
+    background-image: url("../images/FondoInicio.jpg");/*Este es el fondo de la pagina*/
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:55%;
+    z-index: 1;
+    text-align: center;
+}
+#Inicio a{
+    text-decoration: none;
+    color:  bisque;
+    position: relative;
+    font-style: oblique;
+    text-decoration-line: underline;
+    text-decoration-color: bisque;
+    font-family: texto;
+}
+#Inicio .video-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 60%; 
+    
+  }
+  .imagenfondoportada{
+    min-width: 100%;
+    z-index: 1;
+}
+/************Video de fondo****************/
+.video{
+    position:fixed;
+    height: 120%;
+    z-index:-1;
+}
+/**********Barra de navegación*************/
+.navbar{
+    position: sticky !important;
+    width:100%;
+    z-index: 9999;
+}
+
+/*************Carousel+Titulo********************/
+#Introduccion{
+    padding-bottom: 10%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size:8vw;
+    font-family: texto;
+    color: rgb(200, 200, 200);
+    z-index: 3;
+}
+#carouselExampleIndicators{
+    margin-left:10%!important;
+    margin-bottom: 5%!important;
+    margin-top: 15% !important;
+    z-index: 3;
+}
+/*************Footer********************/
+#Footer{
+    text-align:center!important;
+    
+}
+
+    .fondo_negro{
+        background-color: black;
+    }
+
+    .letras_grises{
+        color: rgb(97, 94, 94);
+    }
+
+
+/******************Media Queries***************/
+
+@media only screen and (width>600px){
+    #Inicio{
+        background-position:17%!important;
+    }
+}
+@media only screen and (width<=600px){
+    #Inicio{
+        background-position:10%!important;
+    }
+    .imagenfondoportada{
+        position: relative;
+        z-index: -1;
+    }
+    .video{
+        display: none;
+    }
+    #carouselExampleIndicators{
+        margin-top: -45%!important;
+        width:100%!important;
+        margin-left: 0!important;
+    }
+    #Footer{
+        position: absolute;
+        z-index: 1;
+    }
+    #Footer img{
+        width: 50%;
+    }   
+}

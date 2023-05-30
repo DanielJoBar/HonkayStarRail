@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINKS -->
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!--CSS-->
+    <link href="./CSS/stylePersonajes.css"rel="stylesheet">
+        <!--Icono-->
+    <link rel="shortcut icon" href="./images/OIP.jpg"> 
+        <!--Favicon-->
+    <link rel="shortcut icons" href="favicon.ico" type="image/x-icon">
+    <title>Mundos | Honkai Star Rail</title>
+    <link rel="stylesheet" href="./CSS/styleMundos.css">
+</head>
+<body>
+    <wrapper>
+        <!--Video de fondo-->
+        <video class="video overflow-y overflow-x"  src="./video/videofondo.mp4"  autoplay muted loop ></video>
+        <!--Barra de navegación-->
+        <nav class="navbar navbar-expand-lg navbar-light  bg-dark sticky-top ">
+            <div class="container-fluid">
+            <a href="index.html"><button class="button">Inicio</button></a>
+            <a href=PaginaPersonajes.html><button class="button">Personajes</button></a>
+            <a href=mundos.html><button class="button">Mundos</button></a>
+            <a href=contacto.html><button class="button">Contacto</button></a>
+            </div>
+        </nav>
+        <div class="texto"> 
+            <h1 style="font-size: 5rem">
+                Mundos
+            </h1>
+        </div>
+
+        <!--Planetas-->
+        <div class="container vh-100">
+            <div class="row d-flex flex-wrap">
+                        <!--Planeta1-->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card">
+                                <div class="cardG">
+                                    <img src="./images/Jarilo-VI.png" class="card-img-top" alt="Imagen 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Jarilo-VI<br></br><br></br></h5>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <button type="button"class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">
+                                        Detalles
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                <!--Planeta2-->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                            <img src="./images/Xianzhou_Luofu.png" class="card-img-top" alt="Imagen 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Xianzhou: El Luofu</h5>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">
+                                Detalles
+                                </button>
+                            </div>
+                    </div>
+                </div>
+                <!--Planeta3-->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="./images/EstacionHerta.png" class="card-img-top" alt="Imagen 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Estación Espacial de Herta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">
+                            Detalles
+                            </button>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+        </div>          
+        <!-- Modal 1 -->
+        <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="modal1Label">Jarilo-VI</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            <img src="./images/Belobog1.png" alt="">
+                            <h1>Al cruzar las llanuras nevadas, se ve Belobog en su totalidad.<br>
+                                Es el único lugar del planeta helado Jarilo-VI que podría considerarse "cálido". Al ser la única ciudad en la que aún perdura la civilización humana, Belobog tiene muchos títulos grandilocuentes: el último bastión de la humanidad frente al Hielo Eterno, la tierra bendecida por Qlipoth...
+                                <br><br>
+                                Hace casi un milenio, el Hielo Eterno lo cubrió todo y trajo consigo el Siempreinvierno que pintó de blanco el planeta. Por fortuna, la bendición de la Conservación protegió Belobog, y la humanidad sobrevivió en la ciudad helada y azotada por las ventiscas.
+                            </h1>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+                            </div>
+                    </div>
+                </div>
+        </div>
+            
+            <!-- Modal 2 -->
+            <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="modal2Label">Xianzhou: El Luofu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <img src="./images/xiazhou.png" alt="">
+                    <h1>El Luofu es una de las seis naves de la Alianza Xianzhou. Navega por el infinito océano de estrellas como una flecha divina dirigida al enemigo del Señor de la Cacería.<br><br>
+                        <br>Tras la guerra contra los Moradores de la Abundancia, el Luofu viajó por zonas muy pobladas de la galaxia y llevó a cambio intercambios comerciales y culturales con distintos mundos. <br>
+                        También firmó un acuerdo con la Corporación para la Paz Interastral y ayudó a muchos planetas a reconstruir los ecosistemas arruinados por los Moradores de la Abundancia. Un flujo constante de gente llegaba al Luofu para obtener tratamiento médico, estudiar o comerciar, y los muelles siempre estaban llenos de visitantes.
+                    </h1>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+            <!-- Modal 3 -->
+            <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="modal3Label">Estación Espacial de Herta</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <img src="./images/EstacionHertaDentro.png" alt="">
+                    <h1>Sin conformarse con las leyes del mundo ordinario, Herta, del Círculo de Genios, puso su atención en las inexplicables existencias de la galaxia, buscando en esos lejanos misterios la forma de satisfacer su curiosidad. Para ello, Herta dirigió la creación de una nave estelar tipo museo y la puso en órbita, iniciando su trabajo de investigación para sellar todas las existencias extrañas entre las estrellas. Así nació la famosa Estación Espacial Herta.
+                        <br><br>
+                        Propiedad privada de Herta, miembro nº 83 del Círculo de Genios <br>
+                        El personal de la Estación Espacial tiene todo tipo de experiencias, y los investigadores son el núcleo. Al principio se les asigna a diferentes departamentos en función de su especialidad y sus capacidades.
+                    </h1>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+                    </div>
+                </div>
+                </div>
+        </div>
+        
+        <!--Footer-->
+        <div id="Footer" class="fondo_negro" style=" text-align:center;margin-top:10px;bottom: -1000;">
+            <br> <br> <br>
+            <div>
+                <a href="index.html"><button class="button">Inicio</button></a>
+                <a href="PaginaPersonajes.html"><button class="button">Personajes</button></a>
+                <a href="mundos.html"><button class="button">Mundos</button></a>
+                <a href="contacto.html"><button class="button">Contacto</button></a>
+            </div>
+            <br>
+            <div>
+                <img src="./images/fondofooter1.png">
+            </div>
+            <br>
+            <div class="letras_grises">
+                “PlayStation Family Mark” and “PlayStation” are registered trademarks or trademarks of Sony Interactive Entertainment Inc.
+            </div>
+            <div class="letras_grises">
+                Epic, Epic Games, Epic Games Store, the Epic Games Store logo, and Epic Online Services are trademarks and/or registered trademarks of Epic Games.<br>
+                All other trademarks are the property of their respective owners.
+            </div>
+            <br>
+            <div>
+                <img src="./images/fondofooter2.png">
+            </div>
+            <br>
+            <div class="letras_grises">
+                Copyright © DANIELOXTER. All Rights Reserved.
+            </div>
+        </div>
+    </wrapper>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>
